@@ -99,8 +99,30 @@ SAE currently relies on **NHSMM** as its core dependency.
 pip install nhsmm
 ```
 
+---
+
 Higher-level SAE components, adapters, and services will be released incrementally.
 
+---
 
-## Architecture Overview
+## Support This Project
+
+Development and research around **NHSMM** are supported via
+**GitHub Sponsors**, **Patreon**, **Medium**.
+
+See [FUNDING.md](./FUNDING.md) for details on how to contribute and what support enables.
+
+---
+
+## 🧾 License
+
+This project is released under the **Apache License 2.0** © 2024 **AWA.SI**
+For full license terms and conditions, please see the [LICENSE](https://github.com/awa-si/SAE/blob/develop/LICENSE) file
+
+If you use NHSMM in academic work, please cite the repository
+
+---
+
+
+
 
