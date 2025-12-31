@@ -1,7 +1,7 @@
 # SAE — State Aware Engine
 
 **SAE (State Aware Engine)** is a **cross-domain temporal intelligence framework** for discovering, tracking, and reasoning about **latent states and regimes** in sequential data.  
-It is powered by **NHSMM (Neural Hidden Semi-Markov Models)** and designed to bridge **research-grade sequence modeling** with **production-ready deployment**.
+It is powered by **[NHSMM](https://github.com/awa-si/NHSMM) (Neural Hidden Semi-Markov Models)** and designed to bridge **research-grade sequence modeling** with **production-ready deployment**.
 
 SAE provides a unified engine for **state inference, regime detection, and temporal decision support** across heterogeneous, non-stationary time series.
 
@@ -27,7 +27,7 @@ SAE provides a unified engine for **state inference, regime detection, and tempo
 ---
 
 
-SAE uses **NHSMM as its probabilistic core**, while exposing higher-level abstractions for domain-specific adapters, pipelines, and deployment modes.
+SAE uses **[NHSMM](https://github.com/awa-si/NHSMM) as its probabilistic core**, while exposing higher-level abstractions for domain-specific adapters, pipelines, and deployment modes.
 
 ---
 
@@ -53,7 +53,7 @@ SAE uses **NHSMM as its probabilistic core**, while exposing higher-level abstra
 
 ---
 
-## Relationship to NHSMM
+## Relationship to [NHSMM](https://github.com/awa-si/NHSMM)
 
 - **NHSMM**  
   A modular PyTorch library implementing **neural, context-aware Hidden Semi-Markov Models**.
