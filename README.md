@@ -26,37 +26,10 @@ SAE provides a unified engine for **state inference, regime detection, and tempo
 
 ---
 
-
-SAE uses **[NHSMM](https://github.com/awa-si/NHSMM) as its probabilistic core**, while exposing higher-level abstractions for domain-specific adapters, pipelines, and deployment modes.
-
----
-
-## Core Use Cases
-
-- **Finance & Trading**  
-  Market regime detection, volatility states, adaptive strategy modeling.
-
-- **Cybersecurity & Systems Monitoring**  
-  Hidden operational states, anomaly detection, behavior shifts in logs or telemetry.
-
-- **IoT & Industrial Analytics**  
-  Predictive maintenance, machine state monitoring, fault regime discovery.
-
-- **Health & Wearables**  
-  Activity segmentation, physiological state tracking, anomaly detection.
-
-- **Robotics & Autonomous Systems**  
-  Behavior monitoring, task phase detection, safety-critical state transitions.
-
-- **General Temporal AI Research**  
-  Neural HSMMs, hybrid probabilistic models, non-stationary sequence learning.
-
----
-
 ## Relationship to [NHSMM](https://github.com/awa-si/NHSMM)
 
 - **NHSMM**  
-  A modular PyTorch library implementing **neural, context-aware Hidden Semi-Markov Models**.
+  A modular PyTorch library implementing **neural, context-aware Hidden Semi-Markov Models**, fully **open-source**.
 
 - **SAE**  
   A **system-level engine** built on NHSMM, providing:
@@ -69,16 +42,22 @@ SAE treats NHSMM as its **latent state inference backbone**.
 
 ---
 
+## Core Use Cases
+
+- **Finance & Trading** — Market regime detection, volatility states, adaptive strategy modeling.  
+- **Cybersecurity & Systems Monitoring** — Hidden operational states, anomaly detection, behavior shifts in logs or telemetry.  
+- **IoT & Industrial Analytics** — Predictive maintenance, machine state monitoring, fault regime discovery.  
+- **Health & Wearables** — Activity segmentation, physiological state tracking, anomaly detection.  
+- **Robotics & Autonomous Systems** — Behavior monitoring, task phase detection, safety-critical state transitions.  
+- **General Temporal AI Research** — Neural HSMMs, hybrid probabilistic models, non-stationary sequence learning.
+
+---
+
 ## Deployment Modes (Planned / In Progress)
 
-- **Cloud / SaaS**  
-  Scalable, multi-tenant temporal analytics.
-
-- **On-Prem / Edge**  
-  Low-latency, privacy-preserving inference close to data sources.
-
-- **Accelerator-Ready**  
-  GPU-first execution with future support for additional backends.
+- **Cloud / SaaS** — Scalable, multi-tenant temporal analytics.  
+- **On-Prem / Edge** — Low-latency, privacy-preserving inference close to data sources.  
+- **Accelerator-Ready** — GPU-first execution with future support for additional backends.
 
 ---
 
@@ -93,36 +72,36 @@ APIs, abstractions, and deployment tooling may change before `1.0.0`.
 
 ## Getting Started
 
-SAE currently relies on **NHSMM** as its core dependency.
+SAE currently relies on **NHSMM** as its core dependency:
 
 ```bash
 pip install nhsmm
+Higher-level SAE components, adapters, and services will be released incrementally.
+Early-access versions and research previews are available via Patreon or subscription for controlled use.
 ```
 
----
+## Licensing
+SAE is released under a Proprietary License © 2026 AWA.SI.
 
-Higher-level SAE components, adapters, and services will be released incrementally.
+The repository is public, but usage is restricted:
 
----
+Viewing, cloning, and personal experimentation are permitted.
+
+Redistribution, commercial use, or deployment without permission is prohibited.
+
+Early-access releases may be provided to subscribers via Patreon, with copy usage governed by this Proprietary License.
+
+For full license terms, see LICENSE.
+
+NHSMM remains fully open-source (Apache 2.0), and can be used independently.
 
 ## Support This Project
+Development and research around SAE and NHSMM are supported via:
 
-Development and research around **NHSMM** are supported via
-**GitHub Sponsors**, **Patreon**, **Medium**.
+Patreon (early-access, research sketches, pre-releases)
 
-See [FUNDING.md](./FUNDING.md) for details on how to contribute and what support enables.
+GitHub Sponsors
 
----
+Medium articles & research notes
 
-## 🧾 License
-
-This project is released under the **Apache License 2.0** © 2024 **AWA.SI**
-For full license terms and conditions, please see the [LICENSE](https://github.com/awa-si/SAE/blob/develop/LICENSE) file
-
-If you use NHSMM in academic work, please cite the repository
-
----
-
-
-
-
+See FUNDING.md for details on how contributions help sustain development.
